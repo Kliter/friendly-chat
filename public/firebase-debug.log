@@ -1,0 +1,110 @@
+[debug] [2018-10-25T14:00:07.307Z] ----------------------------------------------------------------------
+[debug] [2018-10-25T14:00:07.310Z] Command:       /Users/katsumikusumi/.nodebrew/node/v6.11.5/bin/node /Users/katsumikusumi/.nodebrew/current/bin/firebase serve
+[debug] [2018-10-25T14:00:07.310Z] CLI Version:   5.1.1
+[debug] [2018-10-25T14:00:07.310Z] Platform:      darwin
+[debug] [2018-10-25T14:00:07.310Z] Node Version:  v6.11.5
+[debug] [2018-10-25T14:00:07.311Z] Time:          Thu Oct 25 2018 23:00:07 GMT+0900 (JST)
+[debug] [2018-10-25T14:00:07.311Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-25T14:00:07.327Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-25T14:00:07.327Z] > authorizing via signed-in user
+[debug] [2018-10-25T14:00:07.327Z] [iam] checking project sample-e708a for permissions ["firebase.projects.get"]
+[debug] [2018-10-25T14:00:07.329Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-25T14:00:07.329Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-25T14:00:07.605Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T14:00:07.626Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-e708a:testIamPermissions  
+
+[debug] [2018-10-25T14:00:08.447Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T14:00:08.449Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sample-e708a  
+ 
+[debug] [2018-10-25T14:00:09.194Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/katsumikusumi/Documents/学習用/friendlychat-web/web-start'...
+[info] 
+[info] i  functions: Preparing to emulate functions.
+[debug] [2018-10-25T14:00:09.987Z] Fetching environment
+[debug] [2018-10-25T14:00:09.991Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/904118966191:getServerAppConfig  
+ 
+[debug] [2018-10-25T14:00:09.991Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/904118966191/clients/_:getWebAppConfig  
+ 
+[debug] [2018-10-25T14:00:10.516Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T14:00:10.517Z] Starting @google-cloud/functions-emulator
+[debug] [2018-10-25T14:00:10.938Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting: Serving hosting files from: ./
+[info] ✔  hosting: Local server: http://localhost:5005
+[debug] [2018-10-25T14:00:12.105Z] Parsing function triggers
+[info] i  functions: No HTTPS functions found. Use firebase functions:shell if you would like to emulate other types of functions.
+[debug] [2018-10-25T14:51:23.995Z] ----------------------------------------------------------------------
+[debug] [2018-10-25T14:51:23.998Z] Command:       /Users/katsumikusumi/.nodebrew/node/v6.11.5/bin/node /Users/katsumikusumi/.nodebrew/current/bin/firebase deploy
+[debug] [2018-10-25T14:51:23.999Z] CLI Version:   5.1.1
+[debug] [2018-10-25T14:51:23.999Z] Platform:      darwin
+[debug] [2018-10-25T14:51:23.999Z] Node Version:  v6.11.5
+[debug] [2018-10-25T14:51:24.000Z] Time:          Thu Oct 25 2018 23:51:23 GMT+0900 (JST)
+[debug] [2018-10-25T14:51:24.000Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-25T14:51:24.018Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-25T14:51:24.019Z] > authorizing via signed-in user
+[debug] [2018-10-25T14:51:24.019Z] [iam] checking project sample-e708a for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2018-10-25T14:51:24.021Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-25T14:51:24.021Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-25T14:51:24.252Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T14:51:24.271Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-e708a:testIamPermissions  
+
+[debug] [2018-10-25T14:51:25.019Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T14:51:25.021Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sample-e708a  
+ 
+[debug] [2018-10-25T14:51:25.849Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'sample-e708a'...
+[info] 
+[info] i  deploying database, functions, hosting
+[debug] [2018-10-25T14:51:27.294Z] Error: ENOENT: no such file or directory, open '/Users/katsumikusumi/Documents/学習用/friendlychat-web/public/database-rules.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:642:18)
+    at Object.fs.readFileSync (fs.js:510:33)
+    at Config.readProjectFile (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/lib/config.js:176:22)
+    at /Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/lib/deploy/database/prepare.js:52:42
+    at /Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:4911:15
+    at baseForOwn (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:2996:24)
+    at /Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:4880:18
+    at Function.forEach (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9344:14)
+    at module.exports (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/lib/deploy/database/prepare.js:49:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2018-10-25T14:51:44.781Z] ----------------------------------------------------------------------
+[debug] [2018-10-25T14:51:44.784Z] Command:       /Users/katsumikusumi/.nodebrew/node/v6.11.5/bin/node /Users/katsumikusumi/.nodebrew/current/bin/firebase deploy
+[debug] [2018-10-25T14:51:44.784Z] CLI Version:   5.1.1
+[debug] [2018-10-25T14:51:44.784Z] Platform:      darwin
+[debug] [2018-10-25T14:51:44.784Z] Node Version:  v6.11.5
+[debug] [2018-10-25T14:51:44.785Z] Time:          Thu Oct 25 2018 23:51:44 GMT+0900 (JST)
+[debug] [2018-10-25T14:51:44.785Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-10-25T14:51:44.796Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-25T14:51:44.796Z] > authorizing via signed-in user
+[debug] [2018-10-25T14:51:44.796Z] [iam] checking project sample-e708a for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2018-10-25T14:51:44.799Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sample-e708a:testIamPermissions  
+
+[debug] [2018-10-25T14:51:45.617Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-25T14:51:45.619Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sample-e708a  
+ 
+[debug] [2018-10-25T14:51:46.434Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'sample-e708a'...
+[info] 
+[info] i  deploying database, functions, hosting
+[debug] [2018-10-25T14:51:47.220Z] Error: ENOENT: no such file or directory, open '/Users/katsumikusumi/Documents/学習用/friendlychat-web/public/database-rules.json'
+    at Error (native)
+    at Object.fs.openSync (fs.js:642:18)
+    at Object.fs.readFileSync (fs.js:510:33)
+    at Config.readProjectFile (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/lib/config.js:176:22)
+    at /Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/lib/deploy/database/prepare.js:52:42
+    at /Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:4911:15
+    at baseForOwn (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:2996:24)
+    at /Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:4880:18
+    at Function.forEach (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/node_modules/lodash/lodash.js:9344:14)
+    at module.exports (/Users/katsumikusumi/.nodebrew/node/v6.11.5/lib/node_modules/firebase-tools/lib/deploy/database/prepare.js:49:5)
+[error] 
+[error] Error: An unexpected error has occurred.
